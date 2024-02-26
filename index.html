@@ -139,7 +139,7 @@
 <hr>
 
 <h2>Primjer stupca koji se proteže kroz 3 retka</h2>
-<p>Kada želimo protegnuti stupac kroz više redaka koristimo svojstvo<strong>rowspan</strong> td elementa. Dodjeljujemo mu vrijednost u kojoj određujemo broj redaka kroz koja se proteže stupac.
+<p>Kada želimo protegnuti stupac kroz više redaka koristimo svojstvo <strong>rowspan</strong> td elementa. Dodjeljujemo mu vrijednost u kojoj određujemo broj redaka kroz koja se proteže stupac.
 </p>
 <table border="1">
 <tr>
@@ -151,6 +151,61 @@
 </tr>
 <tr>
     <td>Treći redak</td>
+</tr>
+</table>
+<hr>
+
+<h2>Primjer retka koji se proteže korz 3 stupca</h2>
+
+<p>kada želimo protegnuti redak kroz više stupaca koristimo <strong>colspan</strong> td i th elementa. Dodjeljujemo mu vrijednost u kojoj određujemo broj stupaca kroz koja se proteže redak</p>
+<table border="1">
+    <tr>
+        <td colspan="3" width="320">Prvi redak</td>
+    </tr>
+    <tr>
+        <td>Prvi stupac</td>
+        <td>Drugi stupac</td>
+        <td>Treći stupac</td>
+    </tr>
+</table>
+<hr>
+
+<h2>Složene tablice</h2>
+<table border="1">
+    <tr>
+        <td>stupac 1</td>
+        <td>stupac 2</td>
+        <td>stupac 3</td>
+        <td>stupac 4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td colspan="4">6</td>
+    </tr>
+    <tr>
+        <td colspan="2">7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td colspan="3">10</td>
+        <td>11</td>
+    </tr>
+</table>
+<hr>
+<table id="druga" border="1">
+<tr>
+    <td rowspan="3">stupac 1</td>
+    <td rowspan="2">stupac 2</td>
+    <td>stupac 3</td>
+    <td>stupac 4</td>
+</tr>
+<td rowspan="2">5</td>
+<td>6</td>    
+</tr>
+<tr>
+    <td>7</td>
+    <td>8</td>
 </tr>
 </table>
 </body>

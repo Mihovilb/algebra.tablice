@@ -7,7 +7,8 @@
 </head>
 <style>
     table {
-        border: 3px solid black
+        border: 3px solid black;
+        border-collapse: collapse;
     }
     th {
         border:2px solid red
@@ -78,7 +79,7 @@
     </table>
 <hr>
 
-<table>
+<table style="border: 5.5px solid rgb(8, 31, 163); width: 70%; text-align: center">
     <caption>
         Namirnice
     </caption>
@@ -114,6 +115,43 @@
         </tr>
     </tfoot>
 </table>
+<hr>
+<h2>Vertikalni Table naslovi</h2>
+
+<p>Prva kolona postaje naslov tablice ukoliko se u svakom retku th element</p>
+<table style="width:100%">
+<tr>
+    <th>Ime</th>
+    <td>Marko</td>
+    <td>Ivana</td>
+</tr>
+<tr>
+    <th>Prezime</th>
+    <td>Marković</td>
+    <td>Ivić-Marković</td>
+</tr>
+<tr>
+    <th>Godine</th>
+    <td>20</td>
+    <td>22</td>
+</tr>
+</table>
+<hr>
+
+<h2>Primjer stupca koji se proteže kroz 3 retka</h2>
+<p>Kada želimo protegnuti stupac kroz više redaka koristimo svojstvo<strong>rowspan</strong> td elementa. Dodjeljujemo mu vrijednost u kojoj određujemo broj redaka kroz koja se proteže stupac.
+</p>
+<table border="1">
+<tr>
+    <td rowspan="3"width="160">Prvi stupac</td>"
+    <td width="160">Prvi redak</td>
+</tr>
+<tr>
+    <td>Drugi redak</td>
+</tr>
+<tr>
+    <td>Treći redak</td>
+</tr>
 </table>
 </body>
 </html>
